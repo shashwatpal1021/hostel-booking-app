@@ -6,7 +6,7 @@ import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 function Page1() {
   const uiConfig = {
     signInFlow: "popup",
-    signInSuccessUrl: "/Hostel_Allocation_Assignment/",
+    signInSuccessUrl: "/hostel-booking-app/",
     signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
   };
 
