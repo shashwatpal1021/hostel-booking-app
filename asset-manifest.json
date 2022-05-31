@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/hostel-booking-app/static/css/main.22904197.css",
-    "main.js": "/hostel-booking-app/static/js/main.4e8a2233.js",
+    "main.js": "/hostel-booking-app/static/js/main.74dae075.js",
     "index.html": "/hostel-booking-app/index.html",
     "main.22904197.css.map": "/hostel-booking-app/static/css/main.22904197.css.map",
-    "main.4e8a2233.js.map": "/hostel-booking-app/static/js/main.4e8a2233.js.map"
+    "main.74dae075.js.map": "/hostel-booking-app/static/js/main.74dae075.js.map"
   },
   "entrypoints": [
     "static/css/main.22904197.css",
-    "static/js/main.4e8a2233.js"
+    "static/js/main.74dae075.js"
   ]
 }
