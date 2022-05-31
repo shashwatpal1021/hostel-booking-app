@@ -6,6 +6,7 @@ import logo from "../Hostel-logg.jpg";
 function Nav(props) {
   return (
     <>
+    
       <header>
         <div className="logo">
           <img src={logo} alt="logo"></img>
@@ -18,6 +19,7 @@ function Nav(props) {
           </div>
         )}
       </header>
+      
     </>
   );
 }

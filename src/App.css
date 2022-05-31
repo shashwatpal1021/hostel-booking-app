@@ -31,8 +31,14 @@
 *{
   margin: 0;
   padding: 0;
-  font-weight: 900%;
+  box-sizing: border-box;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 10px;
 }
+
+
+
 
 .App {
   display: flex;
@@ -44,23 +50,26 @@
 
 header {
   margin: 0;
-  background-color: rgb(252, 252, 252);
   display: flex;
   position: fixed;
-  top:2%;
+  top:10%;
   transform: translate(-50%,);
-  border-radius: 0;
+  border-radius: 10px;
   border-bottom: 1px solid rgb(248, 245, 245); 
+  background: rgb(90, 89, 84);
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(12, 17, 8) 25%, rgb(11, 11, 11) 100%);
 }
 header div {
   margin: 0;
   padding: 8px;
   height: auto;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 0px solid rgb(250, 245, 245);
+  border-radius: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: rgb(25, 23, 3);
+  background: linear-gradient(90deg, rgb(244, 246, 245) 0%, rgb(244, 115, 115) 45%, rgb(248, 246, 249) 100%);
 }
 
 header img {
@@ -80,13 +89,16 @@ p {
 }
 
 section {
-  border: 2px solid black;
+  top:20%;
+  border: 5px solid black;
   border-radius: 30px;
   width: auto;
   height: auto;
-  
   padding: 40px;
   margin: 10px;
+  position: fixed;
+  background: rgb(0, 200, 255);
+  background: linear-gradient(90deg, rgb(250, 250, 250) 0%, rgb(156, 232, 235) 25%, rgb(3, 189, 186) 100%);
 }
 
 button {
@@ -96,13 +108,15 @@ button {
 }
 
 .gender{
-  margin-top: 5vh;
+  margin-top: 2vh;
+  font-size: medium;
 }
 
 .gender button {
-  margin-top: 50px;
+  margin-top: 10px;
   width: 150px;
-  height: 100px;
+  height: 80px;
+  font-size: 100%;
 }
 
 .main {
@@ -113,43 +127,43 @@ button {
 }
 
 .hostel{
-  font-size: 300%;
-  margin-top: vh;
+  font-size: 100%;
 }
 
 .hostel button {
   width: auto;
   height: auto;
   padding: 10px;
-  background-color: rgb(191, 91, 91);
+  background-color: rgb(16, 16, 16);
   color: white;
   font-size: 100%;
+  
 }
 
 .floor{
-  margin-top: 10vh;
-  padding:10px;
-  display: flex;
-  flex-direction: column;
-}
-
-.main{
-  margin: 30px;
   margin-top: 5vh;
   padding:10px;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(50, 127, 215)
+  font-size: 100%;
+}
+
+.main{
+  margin: 10px;
+  margin-top: 1vh;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
 
 .rooms{
-  margin: 30px;
-  margin-top: 5vh;
+  margin: 10px;
+  margin-top: 1vh;
   padding:10px;
   display: flex;
   flex-direction: column;
-  border: 1px solid darkgray;
 }
 
 
@@ -161,30 +175,29 @@ button {
 .rooms button {
   height: 40px;
   width: 40px;
-
-  background-color: yellowgreen;
+  color: white;
+  background-color: rgb(6, 6, 6);
 }
 
 .book {
-  background-color: blue;
-  color: white;
+  background-color: rgb(239, 239, 244);
+  color: rgb(7, 7, 7);
   width: 220px;
   padding: 10px;
 }
 
 .modal {
-  background-color: lightskyblue;
-  margin: 30px;
-  margin-top: 5vh;
+  margin: 10px;
+  margin-top: 1vh;
   padding:10px;
   display: flex;
   flex-direction: column;
-  border: 1px solid darkgray
 }
 
 button:hover,
 a:hover {
   cursor: pointer;
+  background-color: #cf3f3f;
 }
 
 button:active {
@@ -193,12 +206,6 @@ button:active {
 
 
 
-* {
-  box-sizing: border-box;
-  margin: 2px;
-  padding: 5px;
-  border-radius: 10px;
-}
 
 .App {
   display: flex;
