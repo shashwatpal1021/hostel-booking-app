@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
+import Nav from "./components/Nav";
+import Booking from "./components/Booking";
+import Page1 from "./components/Page1";
 
 function App() {
+  const [isSignedIn, setIsSignedIn] = useState(false);
+  const [name, setName] = useState("");
+  const [dp, setDP] = useState("");
+
+  useEffect(() => {
+    const unregisterAuthObserver = firebase
+      .auth()
+      .onAuthStateChanged((user) => {
+        if (user) {
+          // User is signed in.
+          setName(user.displayName);
+          setDP(user.photoURL);
+        }
+        setIsSignedIn(!!user);
+      });
+    return () => unregisterAuthObserver(); // Make sure we un-register Firebase observers when the component unmounts.
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav dp={dp} isSignedIn={isSignedIn} />
+      {isSignedIn ? <Booking name={name} /> : <Page1 />}
     </div>
   );
 }

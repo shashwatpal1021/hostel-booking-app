@@ -28,11 +28,206 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+*{
+  margin: 0;
+  padding: 0;
+  font-weight: 900%;
 }
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  
+}
+
+header {
+  margin: 0;
+  background-color: rgb(252, 252, 252);
+  display: flex;
+  position: fixed;
+  top:2%;
+  transform: translate(-50%,);
+  border-radius: 0;
+  border-bottom: 1px solid rgb(248, 245, 245); 
+}
+header div {
+  margin: 0;
+  padding: 8px;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 50px;
+  height: 40px;
+  margin: 0;
+  padding: 2px;
+}
+
+.dp p {
+  cursor: pointer;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+section {
+  border: 2px solid black;
+  border-radius: 30px;
+  width: auto;
+  height: auto;
+  
+  padding: 40px;
+  margin: 10px;
+}
+
+button {
+  border: none;
+  margin: 0px 5px;
+  margin: 20px;
+}
+
+.gender{
+  margin-top: 5vh;
+}
+
+.gender button {
+  margin-top: 50px;
+  width: 150px;
+  height: 100px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hostel{
+  font-size: 300%;
+  margin-top: vh;
+}
+
+.hostel button {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(191, 91, 91);
+  color: white;
+  font-size: 100%;
+}
+
+.floor{
+  margin-top: 10vh;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  margin: 30px;
+  margin-top: 5vh;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(50, 127, 215)
+}
+
+
+.rooms{
+  margin: 30px;
+  margin-top: 5vh;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid darkgray;
+}
+
+
+.rooms div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rooms button {
+  height: 40px;
+  width: 40px;
+
+  background-color: yellowgreen;
+}
+
+.book {
+  background-color: blue;
+  color: white;
+  width: 220px;
+  padding: 10px;
+}
+
+.modal {
+  background-color: lightskyblue;
+  margin: 30px;
+  margin-top: 5vh;
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid darkgray
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.7;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+
+.dp p {
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
